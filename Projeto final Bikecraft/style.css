@@ -7,19 +7,35 @@ body {
 .header {
   background-color: black;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0%;
+}
+h1,
+p,
+ul {
+  margin: 0px;
+}
 .container {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  max-width: 1160px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-img {
-  display: block;
-}
+
 .submenus a {
   font-size: 18px;
   display: inline-block;
@@ -59,14 +75,7 @@ img {
     display: none;
   }
 }
-a {
-  text-decoration: none;
-}
-ul {
-  padding: 0px;
-  list-style: none;
-  margin: 0%;
-}
+
 @media (max-width: 600px) {
   .header li a {
     background-color: rgb(11, 11, 11);
@@ -83,4 +92,52 @@ ul {
     border-radius: 5px;
     font-size: 80%;
   }
+}
+
+.introducao-bg {
+  background: #000000;
+  color: #ffffff;
+}
+.introducao {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 0px 40px;
+}
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 120px;
+}
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+.introducao h1 span {
+  color: #ffbb00;
+}
+.introducao p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+.introducao a:hover {
+  background: linear-gradient(#ffb600, #e59317);
 }
