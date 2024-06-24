@@ -2,6 +2,7 @@
 @import "./global/global.css";
 /* Home */
 @import "./global/introducao.css";
+@import "./global/tecnologia.css";
 /* Utiltiarios */
 @import "./utilidades/componentes.css";
 @import "./utilidades/cores.css";
